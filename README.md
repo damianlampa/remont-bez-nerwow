@@ -32,3 +32,13 @@ messages. Hooks are installed by `npm ci`.
 
 The `minimatch` override pins a patched release for GHSA-g3hv-75wg-m249 while ESLint dependencies
 request version 10. Remove it once upstream ranges include the fix.
+
+## Contributions
+
+Use a focused branch and a pull request with a Conventional Commits title. CI checks formatting,
+ESLint, types, the production build, dependencies, and the PR title. Merge using squash. See
+[repository settings](.github/repository/README.md) for setup.
+
+## License
+
+[MIT](LICENSE).
