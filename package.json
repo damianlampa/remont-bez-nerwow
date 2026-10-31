@@ -18,7 +18,8 @@
     "astro": "^7.4.4",
     "tailwindcss": "^4.3.3",
     "@tailwindcss/vite": "^4.3.3",
-    "daisyui": "^5.7.50"
+    "daisyui": "^5.7.50",
+    "@astrojs/sitemap": "^3.7.4"
   },
   "allowScripts": {
     "fsevents": false

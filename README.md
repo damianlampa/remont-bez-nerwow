@@ -20,3 +20,5 @@ and `npm run astro -- dev stop`.
 npm run build
 npm run preview
 ```
+
+Set `SITE_URL` to the production URL when deploying to enable sitemap generation.
