@@ -4,7 +4,7 @@ import tseslint from 'typescript-eslint';
 import prettier from 'eslint-config-prettier/flat';
 
 export default [
-  { ignores: ['dist/**', '.astro/**', '.husky/_/**'] },
+  { ignores: ['dist/**', '.astro/**', '.husky/_/**', 'playwright-report/**', 'test-results/**'] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   ...astro.configs.recommended,

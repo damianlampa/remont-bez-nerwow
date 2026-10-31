@@ -4,3 +4,7 @@ dist/
 .husky/_/
 package-lock.json
 AGENTS.local.md
+
+# Browser test output
+playwright-report/
+test-results/
