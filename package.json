@@ -2,22 +2,55 @@
   "name": "remont-bez-nerwow",
   "type": "module",
   "version": "0.0.1",
-  "private": true,
   "engines": {
     "node": ">=26.13.0 <27",
     "npm": ">=11.20.0 <12"
   },
-  "packageManager": "npm@11.20.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint . --max-warnings=0",
+    "lint:fix": "eslint . --fix --max-warnings=0",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "typecheck": "astro check",
+    "check": "npm run format:check && npm run lint && npm run typecheck",
+    "prepare": "husky",
+    "audit": "npm audit --audit-level=low"
   },
   "dependencies": {
-    "astro": "^7.4.4"
+    "@astrojs/sitemap": "^3.7.4",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.4.4",
+    "daisyui": "^5.7.50",
+    "tailwindcss": "^4.3.3"
+  },
+  "private": true,
+  "packageManager": "npm@11.20.0",
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-astro": "^3.2.1",
+    "eslint-plugin-jsx-a11y-x": "^0.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.10",
+    "prettier-plugin-astro": "^1.1.2",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1"
+  },
+  "overrides": {
+    "minimatch": "11.0.3"
   },
   "allowScripts": {
     "fsevents": false
-  }
+  },
+  "license": "MIT"
 }
