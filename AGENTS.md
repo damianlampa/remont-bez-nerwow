@@ -16,7 +16,10 @@ project is currently at the starter stage.
 - Run `npm run check` for formatting, ESLint, and Astro type checks. Run `npm run format` or
   `npm run lint:fix` to apply fixes.
 - Husky checks staged files with lint-staged and commit messages with commitlint.
-- Automated tests are not configured yet. Do not report them as passing.
+- Run `npm test` for browser smoke, responsive layout, and accessibility checks against a production
+  build. Install browsers first with `npm exec playwright -- install chromium firefox webkit`.
+- Add browser interaction tests with new user-facing behavior. Automated accessibility checks
+  supplement manual keyboard and screen reader checks.
 
 ## Implementation
 

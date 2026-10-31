@@ -35,6 +35,21 @@ messages. Hooks are installed by `npm ci`.
 The `minimatch` override pins a patched release for GHSA-g3hv-75wg-m249 while ESLint dependencies
 request version 10. Remove it once upstream ranges include the fix.
 
+## Browser tests
+
+```sh
+npm exec playwright -- install chromium firefox webkit
+npm test
+```
+
+Tests run against a fresh production build in Chromium, Firefox, and WebKit, including mobile
+viewports. They cover page loading, browser errors, horizontal overflow, and automated accessibility
+checks with axe. These checks provide a baseline; add interaction tests alongside each new feature
+and continue manual keyboard and accessibility checks.
+
+Use `npm run test:ui` to debug interactively and `npm run test:report` to inspect the HTML report.
+Failed tests retain traces and screenshots.
+
 ## Contributions
 
 Use a focused branch and a pull request with a Conventional Commits title. CI checks formatting,
