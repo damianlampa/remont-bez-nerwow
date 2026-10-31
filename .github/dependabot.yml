@@ -1,0 +1,28 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '08:00'
+      timezone: Europe/Warsaw
+    open-pull-requests-limit: 0
+    commit-message:
+      prefix: chore
+    groups:
+      npm-minor-patch:
+        update-types: [minor, patch]
+  - package-ecosystem: github-actions
+    directory: /
+    open-pull-requests-limit: 0
+    schedule:
+      interval: weekly
+      day: monday
+      time: '08:00'
+      timezone: Europe/Warsaw
+    commit-message:
+      prefix: ci
+    groups:
+      github-actions:
+        patterns: ['*']
