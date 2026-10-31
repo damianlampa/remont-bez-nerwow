@@ -50,5 +50,6 @@
   },
   "allowScripts": {
     "fsevents": false
-  }
+  },
+  "license": "MIT"
 }
