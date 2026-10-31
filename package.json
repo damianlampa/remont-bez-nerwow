@@ -17,7 +17,8 @@
     "format:check": "prettier . --check",
     "typecheck": "astro check",
     "check": "npm run format:check && npm run lint && npm run typecheck",
-    "prepare": "husky"
+    "prepare": "husky",
+    "audit": "npm audit --audit-level=low"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
