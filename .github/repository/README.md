@@ -10,6 +10,8 @@ gh api --method PUT repos/damianlampa/remont-bez-nerwoww/vulnerability-alerts
 gh api --method PUT repos/damianlampa/remont-bez-nerwoww/automated-security-fixes
 ```
 
+The settings also populate the repository description in GitHub’s About section.
+
 Only squash merges are enabled. The PR title and body become the commit message. Main requires a PR,
 passing quality, dependency audit, and title checks, resolved conversations, and an up-to-date
 branch. Force pushes and deletion are blocked, including for administrators. No second-person

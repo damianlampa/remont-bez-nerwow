@@ -1,4 +1,5 @@
 {
+  "description": "Renovation company website built with Astro, TypeScript and Tailwind CSS.",
   "allow_squash_merge": true,
   "allow_merge_commit": false,
   "allow_rebase_merge": false,
