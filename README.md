@@ -1,6 +1,6 @@
 # Remont bez nerwów
 
-[![CI](https://github.com/damianlampa/remont-bez-nerwoww/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/damianlampa/remont-bez-nerwoww/actions/workflows/ci.yml?query=branch%3Amain)
+[![CI](https://github.com/damianlampa/remont-bez-nerwow/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/damianlampa/remont-bez-nerwow/actions/workflows/ci.yml?query=branch%3Amain)
 
 A website for a renovation company. Currently at the initial setup stage, using Astro, Tailwind CSS,
 and DaisyUI.
