@@ -5,10 +5,10 @@ GitHub does not synchronize them automatically. When changing settings, update t
 the corresponding configuration with GitHub CLI from the repository root:
 
 ```sh
-gh api --method PATCH repos/damianlampa/remont-bez-nerwoww --input .github/repository/settings.json
-gh api --method PUT repos/damianlampa/remont-bez-nerwoww/branches/main/protection --input .github/repository/main-protection.json
-gh api --method PUT repos/damianlampa/remont-bez-nerwoww/vulnerability-alerts
-gh api --method PUT repos/damianlampa/remont-bez-nerwoww/automated-security-fixes
+gh api --method PATCH repos/damianlampa/remont-bez-nerwow --input .github/repository/settings.json
+gh api --method PUT repos/damianlampa/remont-bez-nerwow/branches/main/protection --input .github/repository/main-protection.json
+gh api --method PUT repos/damianlampa/remont-bez-nerwow/vulnerability-alerts
+gh api --method PUT repos/damianlampa/remont-bez-nerwow/automated-security-fixes
 ```
 
 The settings also populate the repository description in GitHub’s About section.
