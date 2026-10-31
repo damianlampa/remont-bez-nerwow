@@ -1,6 +1,6 @@
 # Remont bez nerwów
 
-A website for a renovation company. Currently at the initial Astro setup stage.
+A website for a renovation company. Currently at the initial setup stage, using Astro, Tailwind CSS, and DaisyUI.
 
 ## Development
 

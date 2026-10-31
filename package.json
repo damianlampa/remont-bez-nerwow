@@ -15,7 +15,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.4.4"
+    "astro": "^7.4.4",
+    "tailwindcss": "^4.3.3",
+    "@tailwindcss/vite": "^4.3.3",
+    "daisyui": "^5.7.50"
   },
   "allowScripts": {
     "fsevents": false
